@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Pig Dice Game</title>
+</head>
+
+<body>
+	<main>
+		<div class="wrapper">
+			<div class="player-0 active">
+				<h2 class="player-name" id="name-0">Player 1</h2>
+				<h3 class="player-score" id="score-0">10</h3>
+				<div class="player-current-box">
+					<p class="player-current-label">Current</p>
+					<p class="player-current-score" id="current-0">4</p>
+				</div>
+			</div>
+			<div class="game-panel-control">
+				<button class="btn-new"><i class="material-icons">casino</i>New game</button>
+				<div class="dice-container"><img src="dice-5.png" alt="Dice" class="dice"></div>
+
+				<button class="btn-roll"><i class="material-icons">360</i>Roll dice</button>
+				<button class="btn-hold"><i class="material-icons">add_box</i>Hold</button>
+
+			</div>
+			<div class="player-1">
+				<h2 class="player-name" id="name-1">Player 2</h2>
+				<h3 class="player-score" id="score-1">20</h3>
+				<div class="player-current-box">
+					<p class="player-current-label">Current</p>
+					<p class="player-current-score" id="current-1">8</p>
+				</div>
+			</div>
+		</div>
+		<button class="rules-trigger">Show rules</button>
+		<div class="rules">
+			<p>The game has 2 players, playing in rounds. In each turn, a player rolls a dice as many times as he whishes. Each result get added to his CURRENT score.</p>
+			<p>If the player rolls a 1, all his CURRENT score gets lost. After that, it's the next player's turn.</p>
+			<p>The player can choose to 'Hold', which means that his CURRENT score gets added to his GLOBAL score. After that, it's the next player's turn.</p>
+			<p>The first player to reach 100 points on GLOBAL score wins the game.</p>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; Jarosław Terejko 2018</p>
+	</footer>
+	<script src="my-app.js"></script>
+</body>
